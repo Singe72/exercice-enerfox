@@ -1,0 +1,17 @@
+.Header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: transparent;
+
+    .EnerfoxLogoContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .Menu {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
