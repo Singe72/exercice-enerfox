@@ -1,7 +1,12 @@
+import styles from "./Home.module.css";
+import { Button } from "antd";
+
 export default function Home() {
     return (
         <div>
-            <h1>Hello World!</h1>
+            <Button type="primary">
+                Voir les données
+            </Button>
         </div>
     );
 }
