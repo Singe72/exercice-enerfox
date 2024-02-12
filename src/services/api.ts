@@ -45,7 +45,7 @@ export async function get<T>(url: string, header = {}): Promise<T> {
 }
 
 export function getDeviceData(params: IGetDeviceData): Promise<IBodyDeviceData[]> {
-	const baseUrl = "https://api.enerfox.fr/v1/sites/6442cfb53f02c2fe2494d6c9/devices/6442d10d3131bbdf7f2c82a3/data";
+	const baseUrl = import.meta.env.VITE_ENERFOX_API_URL;
 	const bearer = import.meta.env.VITE_ENERFOX_BEARER_TOKEN;
 
 	const headers = {
