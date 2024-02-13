@@ -20,13 +20,14 @@ git clone https://github.com/Singe72/exercice-enerfox.git
 - Installation des dépendances
 ```
 cd exercice-enerfox
-
+```
+```
 npm install
 ```
 
 - Configuration des variables d'environnement :
   - Créer un fichier .env.local à la racine du projet
-  - Renseigner les variables d'environnement suivant
+  - Renseigner les variables d'environnement suivant l'exemple dans le fichier .env.example
 
 ## Lancement de l'application
 
@@ -38,7 +39,8 @@ npm run dev
 - Production
 ```
 npm run build
-
+```
+```
 npm run preview
 ```
 
