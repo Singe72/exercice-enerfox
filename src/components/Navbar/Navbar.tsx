@@ -1,20 +1,22 @@
 import styles from "./Navbar.module.css";
 import { Layout, Menu } from "antd";
 import type { MenuProps } from "antd";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const items: MenuProps["items"] = [
     {
         label: <Link to="/">Accueil</Link>,
-        key: "home",
+        key: "/",
     },
     {
         label: <Link to="/dashboard">Tableau de bord</Link>,
-        key: "dashboard",
+        key: "/dashboard",
     }
 ];
 
 export default function Navbar() {
+    const location = useLocation();
+
     return (
         <Layout.Header className={styles.Header}>
             <Link to="/" className={styles.EnerfoxLogoContainer}>
@@ -23,7 +25,7 @@ export default function Navbar() {
             <Menu
                 theme="light"
                 mode="horizontal"
-                defaultSelectedKeys={["home"]}
+                defaultSelectedKeys={[location.pathname]}
                 items={items}
                 className={styles.Menu}
             />
