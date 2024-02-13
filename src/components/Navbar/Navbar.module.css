@@ -3,6 +3,10 @@
     align-items: center;
     gap: 1rem;
     background-color: transparent;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
 
     .EnerfoxLogoContainer {
         display: flex;
