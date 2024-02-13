@@ -44,4 +44,4 @@ npm run build
 npm run preview
 ```
 
-Par défaut, l'application sera disponible à l'adresse http://localhost:4173/.
+Par défaut, l'application sera disponible à l'adresse http://localhost:5173/ (développement) ou http://localhost:4173/ (production).
