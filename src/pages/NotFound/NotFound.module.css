@@ -1,0 +1,13 @@
+.NotFoundContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 100%;
+    padding: 2rem;
+
+    h1 {
+        text-align: center;
+    }
+}
