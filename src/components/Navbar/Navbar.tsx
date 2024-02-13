@@ -20,7 +20,7 @@ export default function Navbar() {
     return (
         <Layout.Header className={styles.Header}>
             <Link to="/" className={styles.EnerfoxLogoContainer}>
-                <img src="/src/assets/enerfox_logo.svg" alt="" title="Accueil Enerfox" width={155} />
+                <img src="/enerfox_logo.svg" alt="" title="Accueil Enerfox" width={155} />
             </Link>
             <Menu
                 theme="light"

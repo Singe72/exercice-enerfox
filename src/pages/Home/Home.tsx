@@ -18,7 +18,7 @@ export default function Home() {
                 </Link>
             </div>
             <div className={styles.Right}>
-                <img src="/src/assets/enerfox_3d.webp" alt="Enerfox optimise vos performances énergétiques" />
+                <img src="/enerfox_3d.webp" alt="Enerfox optimise vos performances énergétiques" />
             </div>
         </div>
     );
