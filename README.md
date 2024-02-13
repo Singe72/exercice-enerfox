@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# Exercice Enerfox
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Objectif
 
-Currently, two official plugins are available:
+Développer une application cliente pour afficher des données quotidiennes sur la consommation énergétique d'un appareil.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies utilisées
+- React (TypeScript)
+- Vite
+- Ant Design
+- Recharts
 
-## Expanding the ESLint configuration
+## Installation du projet
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Clone du répertoire
+```
+git clone https://github.com/Singe72/exercice-enerfox.git 
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Installation des dépendances
+```
+cd exercice-enerfox
+
+npm install
+```
+
+- Configuration des variables d'environnement :
+  - Créer un fichier .env.local à la racine du projet
+  - Renseigner les variables d'environnement suivant
+
+## Lancement de l'application
+
+- Développement
+```
+npm run dev
+```
+
+- Production
+```
+npm run build
+
+npm run preview
+```
+
+Par défaut, l'application sera disponible à l'adresse http://localhost:4173/.
