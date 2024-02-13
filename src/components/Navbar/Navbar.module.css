@@ -16,6 +16,10 @@
     .Menu {
         flex: 1;
         min-width: 0;
+
+        li a {
+            font-weight: 600;
+        }
     }
 }
 

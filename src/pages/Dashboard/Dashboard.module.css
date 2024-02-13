@@ -18,11 +18,12 @@
 
     .ChartLegendContainer {
         height: 25%;
-        width: 100%;
-        background-color: #F29003;
+        width: 95%;
+        background-color: var(--orange);
         display: flex;
         flex-direction: column;
         justify-content: center;
+        border-radius: 1rem;
 
         .ChartLegend {
             color: white;
