@@ -5,7 +5,7 @@ import type { DatePickerProps } from "antd";
 import dayjs from "dayjs";
 import locale from "antd/es/date-picker/locale/fr_FR";
 import "dayjs/locale/fr";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from "recharts";
 import { IGetDeviceData, TIME_FRAME, getDeviceData } from "../../services/api";
 
 type TransformedDeviceData = {
@@ -58,7 +58,7 @@ export default function Dashboard() {
                     onChange={handleDateChange}
                 />
                 <ResponsiveContainer width="100%" height="100%">
-                    <LineChart
+                    <AreaChart
                         width={500}
                         height={100}
                         data={deviceData}
@@ -67,9 +67,9 @@ export default function Dashboard() {
                         <XAxis dataKey="name" interval={119} />
                         <YAxis unit=" W" />
                         <Tooltip />
-                        <Legend />
-                        <Line type="monotone" dataKey="puissance" stroke="#82ca9d" dot={false} />
-                    </LineChart>
+                        <Legend name="" />
+                        <Area type="monotone" dataKey="puissance" stroke="#F29003" fill="#FC9D13" dot={false} />
+                    </AreaChart>
                 </ResponsiveContainer>
             </div>
             <div className={styles.ChartLegendContainer}>
